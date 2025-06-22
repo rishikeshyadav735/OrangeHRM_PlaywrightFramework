@@ -49,17 +49,17 @@ Edit
 ├── package.json          # Project metadata & scripts
 └── README.md             # You are here
 
-How to Run Tests
+# 3. How to Run Tests
 Run all tests: npx playwright test
 Run a specific test file: npx playwright test tests/login.spec.ts
 Run with HTML report view: npx playwright show-report
 
-Reports & Screenshots
+# 4. Reports & Screenshots
 Test results are available in the default Playwright report directory (playwright-report/).
 
 Any failed test will auto-generate a screenshot/video under test-results/.
 
-Contributing
+# 5. Contributing
 Contributions are welcome! Please follow these steps:
 
 Fork the repository
@@ -75,7 +75,7 @@ Push (git push origin feature/my-new-test)
 Open a pull request
 
 
-🚀 Want to Extend?
+#  🚀 Want to Extend?
 Add more modules like Leave, Admin, Dashboard
 
 Integrate with CI/CD pipelines (GitHub Actions, Jenkins)

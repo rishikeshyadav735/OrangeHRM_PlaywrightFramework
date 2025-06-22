@@ -1,0 +1,30 @@
+{
+  "name": "playwrighttypescriptframework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test_dev": "cross-env ENV_NAME=dev npx playwright test",
+    "test_demo": "cross-env ENV_NAME=demo npx playwright test",
+    "test_demo_chromium_headed": "cross-env ENV_NAME=demo SECRET_KEY=batman npx playwright test --project=chromium --headed",
+    "test_demo_firefox_headed": "cross-env ENV_NAME=demo SECRET_KEY=batman npx playwright test --project=firefox --headed",
+    "test_demo_chromium_headless": "cross-env ENV_NAME=demo SECRET_KEY=batman npx playwright test --project=chromium",
+    "test_demo_firefox_headless": "cross-env ENV_NAME=demo SECRET_KEY=batman npx playwright test --project=firefox",
+    "test_demo_ui": "cross-env ENV_NAME=demo SECRET_KEY=batman npx playwright test --ui",
+    "test_uat_cr_hd": "cross-env ENV_NAME=demo SECRET_KEY=batman npx playwright test --project=chromium --grep=@UAT",
+    "test_demo_cr_hd_vi": "cross-env ENV_NAME=demo SECRET_KEY=batman npx playwright test --project=chromium --grep=@VISUAL",
+    "test_demo_cr_hd_lastfailed": "cross-env ENV_NAME=demo SECRET_KEY=batman npx playwright test --project=chromium --last-failed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.29"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.5.0"
+  }
+}

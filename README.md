@@ -1,4 +1,4 @@
-OrangeHRM Playwright Automation Framework 🧪
+# OrangeHRM Playwright Automation Framework 🧪
 Automated end-to-end testing of the OrangeHRM demo application using Playwright, TypeScript, and Node.js. Supports both positive and negative test scenarios, following a Page Object Model structure.
 
 
